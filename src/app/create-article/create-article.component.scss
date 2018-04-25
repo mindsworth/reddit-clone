@@ -1,0 +1,20 @@
+form {
+  background-color: darkmagenta;
+  border-top: 7px solid darken(darkmagenta, 6);
+  display: inline-block;
+  color: #ffffff;
+
+  .form-group {
+    .btn-success {
+      border-top: 5px solid darken(#5CB85C, 10);
+      border-bottom: 5px solid transparent;
+
+      &:hover {
+        border-bottom: 5px solid #5CB85C;
+        border-top: 5px solid transparent;
+        position: relative;
+        cursor: pointer;
+      }
+    }
+  }
+}

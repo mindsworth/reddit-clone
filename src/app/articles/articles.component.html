@@ -1,0 +1,15 @@
+<div class="list-group-item">
+  <div class="d-flex flex-nowrap">
+    <div style="width: 100px; height: 100px; background-color: #f7f7f7;" class="text-center mr-5">
+      <h1 class="pt-1">{{ articleItem.votes }}</h1>
+      <p>Points</p>
+    </div>
+    <div>
+      <h4>{{ articleItem.title }}</h4>
+      <p>{{ articleItem.domain() }}</p>
+      <div>
+        <a href="#" class="mr-3 btn btn-primary btn-sm" (click)="voteUp()"><i class="fas fa-arrow-up mr-1"></i>Upvote</a><a class="btn btn-primary btn-sm" href="#" (click)="voteDown()"><i class="fas fa-arrow-down mr-1"></i>Downvote</a>
+      </div>
+    </div>
+  </div>
+</div>
